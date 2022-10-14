@@ -12,9 +12,10 @@ PURPOSE: is that those packages are sent to those central post offices for those
 
 */
 //this is GIVEN
-let package = [
-  "north carolina",
+let packages = [
+  'north carolina',
   'north dakota',
+  'wisconsin',
   'arizona',
   'washington',
   'oregon',
@@ -23,6 +24,7 @@ let package = [
   'california',
   'louisiana',
   'texas',
+  'wisconsin',
   'montana',
   'oregon',
   'north dakota',
@@ -34,10 +36,50 @@ let package = [
   'louisiana',
   'california',
   'arizona',
-  "north carolina",
+  'north carolina',
+
 ]
+// prepare states from regios
+
+let statesFromCanadianRegion = ['north dakota', 'montana', 'wisconsin'];
+let statesFromPacificRegion = ['oregon', 'washington', 'california'];
+let statesFromAtlanticRegion = ['virginia', 'north carolina', 'maryland'];
+let statesFromMexicanRegion = ['california', 'arizona', 'texas'];
+
+// test does work 
+//console.log(statesFromCanadianRegion)
+
+// regions array
 
 let packagesForCanadianRegion = [];
 let packagesForPacificRegion = [];
-let packagesForAtlanticregion = [];
+let packagesForAtlanticRegion = [];
 let packagesForMexicanRegion = [];
+
+
+
+// loop through array packets and assign a packet to each region it belongs 
+
+let postWorkerBojan;
+
+for (let i = 0; i < packages.length; i++) {
+  const package = packages[i];
+  if (package === 'north dakota' || package === 'montana' || package === 'wisconsin') {
+    packagesForCanadianRegion.push(package)
+  } else if (
+    package === 'oregon' || package === 'washington' || package === 'california') {
+    packagesForPacificRegion.push(package)
+  } else if (
+    package === 'virginia' || package === 'north carolina' || package === 'maryland') {
+    packagesForAtlanticRegion.push(package)
+  } else if (
+    package === 'california' || package === 'arizona' || package === 'california') {
+    packagesForMexicanRegion.push(package)
+  }
+}
+console.log("packages For Canadian Region", packagesForCanadianRegion);
+console.log("packages For Pacific Region", packagesForPacificRegion);
+console.log("packages For Atlantic Region", packagesForAtlanticRegion);
+console.log("packages For Mexican Region", packagesForMexicanRegion);
+
+// program works fine,
