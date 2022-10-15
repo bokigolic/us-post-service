@@ -23,15 +23,19 @@ let packages = [
   'maryland',
   'california',
   'louisiana',
+  'washgddfdfington',
   'texas',
   'wisconsin',
+  44558,
   'montana',
   'oregon',
+  none, 
   'north dakota',
   'washington',
   'virginia',
   'virginia',
   'texas',
+  965,
   'maryland',
   'louisiana',
   'california',
@@ -44,7 +48,7 @@ let packages = [
 let statesFromCanadianRegion = ['north dakota', 'montana', 'wisconsin'];
 let statesFromPacificRegion = ['oregon', 'washington', 'california'];
 let statesFromAtlanticRegion = ['virginia', 'north carolina', 'maryland'];
-let statesFromMexicanRegion = ['california', 'arizona', 'texas'];
+let statesFromMexicanRegion = ['louisiana', 'arizona', 'texas'];
 
 // test does work 
 //console.log(statesFromCanadianRegion)
@@ -55,6 +59,7 @@ let packagesForCanadianRegion = [];
 let packagesForPacificRegion = [];
 let packagesForAtlanticRegion = [];
 let packagesForMexicanRegion = [];
+let undeliverablePackages = [];
 
 
 
@@ -73,13 +78,17 @@ for (let i = 0; i < packages.length; i++) {
     package === 'virginia' || package === 'north carolina' || package === 'maryland') {
     packagesForAtlanticRegion.push(package)
   } else if (
-    package === 'california' || package === 'arizona' || package === 'california') {
+    package === 'louisiana' || package === 'arizona' || package === 'texas') {
     packagesForMexicanRegion.push(package)
+  } else {
+    undeliverablePackages.push(package)
+
   }
 }
 console.log("packages For Canadian Region", packagesForCanadianRegion);
 console.log("packages For Pacific Region", packagesForPacificRegion);
 console.log("packages For Atlantic Region", packagesForAtlanticRegion);
 console.log("packages For Mexican Region", packagesForMexicanRegion);
+console.log("undeliverable Packages", undeliverablePackages)
 
 // program works fine,
