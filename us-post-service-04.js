@@ -19,38 +19,147 @@ STEP 2)
 */
 //this is GIVEN
 let packages = [
-  'north carolina',
-  'north dakota',
+  {
+    address: '',
+    city: 'raleigh',
+    state: 'north carolina'
+  },
+  {
+    address: '',
+    city: 'bismarck',
+    state: 'north dakota'
+  },
+
+
   5659986,
   'hdjkfhksehfs',
-  'wisconsin',
-  'arizona',
-  'washington',
-  'oregon',
-  'montana',
+  {
+    address: '',
+    city: 'madison',
+    state: 'wisconsin'
+  },
+
+  {
+    address: '',
+    city: 'phoenix',
+    state: 'arizona'
+  },
+
+  {
+    address: '',
+    city: 'phoenix',
+    state: 'arizona'
+  },
+  {
+    address: '',
+    city: 'seatle',
+    state: 'washington'
+  },
+  {
+    address: '',
+    city: 'seatle',
+    state: 'washington'
+  },
+  {
+    address: '',
+    city: 'helena',
+    state: 'montana'
+  },
   'nddnddkdk',
 
-  'maryland',
-  'california',
-  'louisiana',
+  {
+    address: '',
+    city: 'anapolis',
+    state: 'maryland'
+  },
+  {
+    address: '',
+    city: 'anapolis',
+    state: 'maryland'
+  },
+  {
+    address: '',
+    city: 'baton rouge',
+    state: 'louisiana'
+  },
+
   'washgddfdfington',
   'texas',
-  'wisconsin',
+  {
+    address: '',
+    city: 'madison',
+    state: 'wisconsin'
+  },
   44558,
-  'montana',
+  {
+    address: '',
+    city: 'helena',
+    state: 'montana'
+  },
   'oregon',
   null,
-  'north dakota',
-  'washington',
-  'virginia',
-  'virginia',
-  'texas',
+  {
+    address: '',
+    city: 'bismarck',
+    state: 'north dakota'
+  },
+
+  {
+    address: '',
+    city: 'seatle',
+    state: 'arizona'
+  },
+  {
+    address: '',
+    city: 'richmond ',
+    state: 'virginia'
+  },
+  {
+    address: '',
+    city: 'richmond ',
+    state: 'virginia'
+  },
+  {
+    address: '',
+    city: 'austin ',
+    state: 'texas'
+  },
+  {
+    address: '',
+    city: 'austin ',
+    state: 'texas'
+  },
+
+
   965,
-  'maryland',
-  'louisiana',
+  {
+    address: '',
+    city: 'anapolis',
+    state: 'maryland'
+  },
+  {
+    address: '',
+    city: 'baton rouge',
+    state: 'louisiana'
+  },
   'california',
-  'arizona',
-  'north carolina',
+
+  {
+    address: '',
+    city: 'raleigh',
+    state: 'north carolina'
+  },
+  {
+    address: '',
+    city: 'sacramento',
+    state: 'california'
+  },
+  {
+    address: '',
+    city: 'sacramento',
+    state: 'california'
+  }
+
 
 ]
 // prepare states from regios
